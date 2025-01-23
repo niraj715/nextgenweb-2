@@ -1,0 +1,77 @@
+body{
+    overflow: hidden;
+}
+
+.hero{
+    height: 100vh;
+    background: linear-gradient(to right,#032649c8, #530230c6), url(https://www.webxnep.com/images/background/4.jpg);
+    background-size: cover;
+
+}
+.logo{
+    width: 150px;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    color: white;
+    font-size: 16px;
+   font-weight: 400;
+    padding: 0px 25px;
+}
+.btn-own{
+    background: linear-gradient(to right,#1b67afe7, #cc177edb);
+    color: white;
+    border-radius: 50px;
+
+}
+.hero-text{
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: rgb(225, 225, 248);
+    
+        
+}
+@media (min-width: 1200px)
+{
+.hero-text h1{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    text-align: center;
+    
+ }
+}
+.hero-text h1 span{
+    background: -webkit-linear-gradient(#49D68A,#3C8CEA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;   
+}
+.hero-text p{
+    font-style: normal;
+    font-weight: 400;
+    color: 
+    rgb(225, 225, 248);
+    font-size: 20px;
+    text-align: center;
+}
+.btn1{
+    background: rgba(255, 255, 255, 0.149);
+    padding: 14px 30px;
+    text-align: center;
+    border-radius: 25px;
+    color: white;
+    font-weight: 400;
+    border: none;
+}
+footer{
+    position: fixed;
+    bottom: 25px;
+    width: 100%;
+    color: white;
+} 
+.social{
+    font-size: 25px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.607);
+}
