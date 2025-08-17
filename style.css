@@ -1,27 +1,83 @@
 body{
     overflow: hidden;
 }
+a{
+    color: inherit;
+    text-decoration: none;
+}
+/* intro css  */
+#intro {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: #111; /* Dark background */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  z-index: 9999;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 2s ease-in forwards;
+}
+
+.fade-in:nth-child(2) {
+  animation-delay: 1s;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+/* intro css ended */
 
 .hero{
-    height: 100vh;
-    background: linear-gradient(to right,#032649c8, #530230c6), url(https://www.webxnep.com/images/background/4.jpg);
-    background-size: cover;
-
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-size: cover !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: slideshow 16s infinite;
+  z-index: -1;
 }
+@keyframes slideshow {
+0% { background:  linear-gradient(to right, #032649c8, #530230c6),url(https://www.webxnep.com/images/background/4.jpg); transition: 1s; }  
+33%  { background: linear-gradient(to right,#032649c8, #530230c6),url(https://i.pinimg.com/736x/c7/a5/10/c7a51015f36fcf6e41f3e544491a3153.jpg); transition: 1s; }
+66%  {background: linear-gradient(to right,#032649c8, #530230c6), url(https://i.pinimg.com/1200x/27/71/cf/2771cf615d155dc84fb863d39de1b762.jpg); transition: 1s; }
+100% {background: linear-gradient(to right,#032649c8, #530230c6), url(https://i.pinimg.com/736x/5b/9d/e4/5b9de4325f0e19b794b21d0ba78ca5b0.jpg); transition: 1s; }
+}
+
 .logo{
-    width: 150px;
+    width: 250px;
 }
 .navbar-expand-lg .navbar-nav .nav-link{
     color: white;
     font-size: 16px;
-   font-weight: 400;
+   font-weight: 800;
     padding: 0px 25px;
 }
+.nav-link:hover{
+    scale: 1.1;
+    transition: all 0.3s ease-in-out;
+}
 .btn-own{
-    background: linear-gradient(to right,#1b67afe7, #cc177edb);
+    background-color: #3BBDEF;
     color: white;
     border-radius: 50px;
 
+}
+
+.btn-own:hover{
+    background-color: #000;
+    color: #3BBDEF;
+    text-decoration: underline;
+    font-weight: 400;
+    transition: 1s;
 }
 .hero-text{
     position: absolute;
